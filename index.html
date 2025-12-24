@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronic Engineer | Portfolio</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">EE<span>.</span></div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero show">
+      <div class="circuit"></div>
+      <h1>Hanin <span>Al-Rawi</span></h1>
+
+      <p>
+      I'm an Electronic Engineering student passionate about designing intelligent
+    systems and innovative electronic solutions.
+      </p>
+      <div class="buttons">
+        <a href="#projects">View Projects</a>
+        <a href="#contact">Contact Me</a>
+      </div>
+       <div class="home-img">
+          <div class="img-box">
+            <img src="aa.jpg" alt="" />
+          </div>
+        </div> </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am an Electronic Engineer passionate about circuit design, embedded
+        systems, and modern electronic solutions. I enjoy turning complex ideas
+        into efficient systems.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="card">Analog & Digital Circuits</div>
+        <div class="card">Embedded Systems</div>
+        <div class="card">PCB Design</div>
+        <div class="card">C / C++ / Python</div>
+        <div class="card">Arduino & Raspberry Pi</div>
+        <div class="card">MATLAB & Simulation</div>
+      </div>
+    </section>
+
+   <section class="projects">
+  <h2>My Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- Project Card 1 -->
+    <div class="project-card">
+      <img src="1-.png" alt="Project Image">
+
+      <div class="card-overlay">
+        <button onclick="openVideo('1.mp4')">
+          ▶ View Project
+        </button>
+      </div>
+
+      <h3>Smart Home System</h3>
+      <p>IoT-based automation using Arduino & Sensors</p>
+    </div>
+
+    <!-- Project Card 2 -->
+    <div class="project-card">
+      <img src="2-.png" alt="Project Image">
+
+      <div class="card-overlay">
+        <button onclick="openVideo('2.mp4')">
+          ▶ View Project
+        </button>
+      </div>
+
+      <h3>Power Supply Design</h3>
+      <p>Regulated DC Power Supply Circuit</p>
+    </div>
+<!-- Project Card 3 -->
+    <div class="project-card">
+      <img src="3-.png" alt="Project Image">
+
+      <div class="card-overlay">
+        <button onclick="openVideo('3.mp4')">
+          ▶ View Project
+        </button>
+      </div>
+
+      <h3>Power Supply Design</h3>
+      <p>Regulated DC Power Supply Circuit</p>
+    </div>
+    <!-- Project Card 4 -->
+    <div class="project-card">
+      <img src="4-.png" alt="Project Image">
+
+      <div class="card-overlay">
+        <button onclick="openVideo('4.mp4')">
+          ▶ View Project
+        </button>
+      </div>
+
+      <h3>Power Supply Design</h3>
+      <p>Regulated DC Power Supply Circuit</p>
+    </div>
+
+<!-- Project Card 6 -->
+    <div class="project-card">
+      <img src="6-.png" alt="Project Image">
+
+      <div class="card-overlay">
+        <button onclick="openVideo('6.mp4')">
+          ▶ View Project
+        </button>
+      </div>
+
+      <h3>Power Supply Design</h3>
+      <p>Regulated DC Power Supply Circuit</p>
+    </div>
+<!-- Project Card 7 -->
+    <div class="project-card">
+      <img src="7-.jpeg" alt="Project Image">
+
+      <div class="card-overlay">
+        <button onclick="openVideo('7.mp4')">
+          ▶ View Project
+        </button>
+      </div>
+
+      <h3>Power Supply Design</h3>
+      <p>Regulated DC Power Supply Circuit</p>
+    </div>
+<!-- Project Card 8 -->
+    <div class="project-card">
+      <img src="8-.jpeg" alt="Project Image">
+
+      <div class="card-overlay">
+        <button onclick="openVideo('8.mp4')">
+          ▶ View Project
+        </button>
+      </div>
+
+      <h3>Power Supply Design</h3>
+      <p>Regulated DC Power Supply Circuit</p>
+    </div>
+<!-- Project Card 9 -->
+    <div class="project-card">
+      <img src="9-.png" alt="Project Image">
+
+      <div class="card-overlay">
+        <button onclick="openVideo('9.mp4')">
+          ▶ View Project
+        </button>
+      </div>
+
+      <h3>Power Supply Design</h3>
+      <p>Regulated DC Power Supply Circuit</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Video Modal -->
+<div class="video-modal" id="videoModal">
+  <div class="video-content">
+    <span class="close" onclick="closeVideo()">✖</span>
+    <video id="projectVideo" controls></video>
+  </div>
+</div>
+
+
+    </section>
+     <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2 class="Section">Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/haninrawi4/"><i class="fab fa-instagram fa-2x"></i></a>
+        
+        <a href="https://www.linkedin.com/in/ahed-al-kahil-/"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer> Asmaa Adass | All Rights Reserved</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
